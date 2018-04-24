@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textSenseTemp;
     private LinearLayout actuadorFrio;
+    private LinearLayout actuadorCalor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         textSenseTemp = (TextView) findViewById(R.id.sensetemp);
         actuadorFrio = (LinearLayout) findViewById(R.id.actuadorfrio);
+        actuadorCalor = (LinearLayout) findViewById(R.id.actuadorcalor);
 
         textTitle.setTypeface(typeface);
         textCalor.setTypeface(typeface);
@@ -98,12 +100,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected Long doInBackground(Void... values) {
             //int count = 0;
-            Integer [] temps= {24,28,24,32,24,24,24,13,24,24};
+            Integer[] temps = {26, 26, 27, 30, 27, 26, 23, 21, 19, 24};
             long totalSize = 0;
 
             for (int i = 0; i < 10; i++) {
-                try{
-                    Thread.sleep(3000); //Segundos
+                try {
+                    Thread.sleep(5000); //Segundos
                 } catch (InterruptedException e) {
 
                 }
@@ -116,22 +118,22 @@ public class MainActivity extends AppCompatActivity {
         protected void onProgressUpdate(Integer... newTemp) {
             Integer tempValue = newTemp[0];
             textSenseTemp.setText(tempValue.toString());
-            if(tempValue >= 27){
+            if (tempValue >= 28) {
+                actuadorCalor.setVisibility(View.VISIBLE);
+            } else if (tempValue <= 20) {
                 actuadorFrio.setVisibility(View.VISIBLE);
-            }else {
+            } else {
                 actuadorFrio.setVisibility(View.GONE);
+                actuadorCalor.setVisibility(View.GONE);
             }
-
         }
 
-        @Override
-        protected void onPostExecute(Long result) {
-            //showDialog("Downloaded " + result + " bytes");
+            @Override
+            protected void onPostExecute(Long result){
+                //showDialog("Downloaded " + result + " bytes");
+            }
         }
     }
-
-
-}
 
 
 
