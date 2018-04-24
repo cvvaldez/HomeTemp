@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">HOME TEMP</string>
+    <string name="app_name"><b>HOME TEMP</b></string>
     <string name="action_settings">Settings</string>
-    <string name="yesbutton">¡Si!</string>
-    <string name="calortext">¡Hace mucho calor!... ¿Quieres prender el ventilador?</string>
-    <string name="friotext">¡Hace mucho frio!... ¿Quieres prender la calefaccion?</string>
-    <string name="temp">Temperatura: </string>
-    <string name="hum">Humedad: </string>
+    <string name="yesbutton"><b>¡Si!</b></string>
+    <string name="calortext"><b>¡Hace mucho calor!... ¿Quieres prender el ventilador?</b></string>
+    <string name="friotext"><b>¡Hace mucho frio!... ¿Quieres prender la calefaccion?</b></string>
+    <string name="temp"><b>Temperatura:   </b></string>
+    <string name="hum"><b>Humedad:   </b></string>
 </resources>

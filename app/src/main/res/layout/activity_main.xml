@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/textTitle"
                     android:text="@string/app_name"
-                    android:textSize="35sp"
+                    android:textSize="45sp"
                     android:textColor="@color/colorWhite"
                     android:textAlignment="center"/>
             </RelativeLayout>
