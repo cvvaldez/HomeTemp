@@ -1,7 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="File '.../usaa/src/main/java/com/usaa/mobile/android/app/bank/androidpay/LaunchCardPickerActivity.java [usaa-android-container]'" />
-    <option name="defaultScopeName" value="File '.../usaa/src/main/java/com/usaa/mobile/android/app/bank/androidpay/LaunchCardPickerActivity.java [usaa-android-container]'" />
-    <option name="SEARCH_SCOPE" value="File '.../usaa/src/main/java/com/usaa/mobile/android/app/bank/androidpay/LaunchCardPickerActivity.java [usaa-android-container]'" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="wholeWordsOnly" value="true" />
+    <option name="WHOLE_WORDS_ONLY" value="true" />
+    <option name="SEARCH_SCOPE" value="All Places" />
   </component>
 </application>
